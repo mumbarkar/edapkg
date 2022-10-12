@@ -1,0 +1,11 @@
+Package: edapkg
+Type: Package
+Title: EDA
+Version: 0.1.0
+Author: Mahesh Umbarkar
+Maintainer: Mahesh Umbarkar <m.umbarkar@anlitiks.com>
+Description: This function calculates mean, median and Standard deviation of a numeric vector.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.1
