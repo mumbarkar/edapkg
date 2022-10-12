@@ -11,3 +11,7 @@ LazyData: true
 RoxygenNote: 7.2.1
 URL: https://github.com/mumbarkar/edapkg
 BugReports: https://github.com/mumbarkar/edapkg/issues
+Suggests: 
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
