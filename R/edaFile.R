@@ -6,6 +6,9 @@
 #'
 #' @return average, median, stddev
 #'
+#' @importFrom stats median sd
+#' @importFrom insight format_table
+#'
 #' @export
 #'
 #' @examples
@@ -23,5 +26,6 @@ edatest <- function(x) {
   results <- list(average = avg,
                   median = med,
                   stddev = stdev)
-  return(results)
+  return(format_table(results))
 }
+
