@@ -1,0 +1,33 @@
+---
+title: "Setting up edapkg on your machine?"
+author: "Mahesh Umbarkar"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Setting up edapkg on your machine}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+### First, we have to install the edapkg pakcgae from CRAN using below R code
+
+```r
+# install.packages("edapkg")
+```
+
+### Then, we have to load the package
+
+```{r setup}
+library(edapkg)
+```
+### Lets try this package on mtcars dataset
+
+```{r mtcars}
+edapkg::edatest(mtcars$mpg)
+```
